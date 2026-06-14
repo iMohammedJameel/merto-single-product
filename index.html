@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Jameel Fouad - 11216</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="cat-overlay" id="catOverlay" onclick="closeCat()"></div>
+  <div class="cat-sidebar" id="catSidebar">
+    <div class="cat-header">
+      <i class="fa-solid fa-bars"></i>
+      SHOP BY CATEGORIES
+      <button class="cat-close" onclick="closeCat()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cat-list">
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-shirt"></i></div>
+        <span class="cat-item-name">Fashion</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <span class="cat-item-name">Phone &amp; Tablet</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-laptop"></i></div>
+        <span class="cat-item-name">Laptop &amp; Computer</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-tv"></i></div>
+        <span class="cat-item-name">TV, Audio – Video</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-camera"></i></div>
+        <span class="cat-item-name">Camera &amp; Photo</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-couch"></i></div>
+        <span class="cat-item-name">Home &amp; Decor</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-spa"></i></div>
+        <span class="cat-item-name">Beauty &amp; Health</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-gamepad"></i></div>
+        <span class="cat-item-name">Game Accessories</span>
+      </div>
+      <div class="cat-item">
+        <div class="cat-item-icon"><i class="fa-solid fa-car"></i></div>
+        <span class="cat-item-name">Autopart</span>
+        <i class="fa-solid fa-chevron-right cat-item-arrow"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="top-nav">
+    <div class="wrapper">
+
+      <button class="mobile-menu-btn" onclick="openCat()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="logo-wrap">
+        <img src="./assets/images/logo.png" alt="logo" class="logo">
+        <div class="contact-info">
+          <i class="fa-solid fa-phone"></i>
+          <div class="contact-text">
+            <span class="contact-label">Contact us 24/7</span>
+            <span class="contact-number">(+92) 3942 7879</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-bar">
+        <select class="search-category">
+          <option>All Categories</option>
+          <option>Electronic</option>
+          <option>Apple</option>
+          <option>Smartwatch</option>
+        </select>
+        <input type="text" placeholder="Search for products">
+        <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <div class="nav-right-grp">
+        <div class="nav-dropdown">
+          <img src="./assets/images/flag.png" alt="flag">
+          <span>English</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="nav-dropdown">
+          <span>USD</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <a class="nav-account">
+          <i class="fa-regular fa-user"></i>
+          <span>Account</span>
+        </a>
+        <a class="nav-icon">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge">0</span>
+        </a>
+        <a class="nav-icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+
+      <div class="mobile-nav-right">
+        <a><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="badge">0</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="sec-nav">
+    <div class="wrapper">
+      <div class="shop-cat-btn" onclick="openCat()">
+        <i class="fa-solid fa-bars"></i> SHOP BY CATEGORIES
+      </div>
+      <ul class="nav-links">
+        <li><a>Homepages <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a>Categories <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a>Products <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a>Pages <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a>About us</a></li>
+        <li><a>Blog</a></li>
+        <li>
+          <a class="best-discount-link">
+            <span class="discount-icon"><i class="fa-solid fa-tag"></i></span>
+            Best Discount
+          </a>
+        </li>
+      </ul>
+      <div class="recently-viewed">
+        Recently viewed <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="breadcrumb-bar">
+      <div class="wrapper">
+        <a>Home</a><span class="breadcrumb-sep">›</span>
+        <a>Shop</a><span class="breadcrumb-sep">›</span>
+        <a>Electronic</a><span class="breadcrumb-sep">›</span>
+        <a>Apple</a><span class="breadcrumb-sep">›</span>
+        Apple Watch Series 9 GPS 45mm, Aluminum Case with Sport Band
+      </div>
+    </div>
+
+
+    <div class="product-section">
+      <div class="wrapper">
+        <div class="product-layout">
+
+          <div class="gallery">
+            <div class="thumbnails" id="thumbs">
+              <div class="thumb active" onclick="si(0,this)">
+                <img src="./assets/images/w1.jpg" alt="watch1">
+              </div>
+              <div class="thumb" onclick="si(1,this)">
+                <img src="./assets/images/w2.jpg" alt="watch2">
+              </div>
+              <div class="thumb" onclick="si(2,this)">
+                <img src="./assets/images/w3.jpg" alt="watch3">
+              </div>
+              <div class="thumb" onclick="si(3,this)">
+                <img src="./assets/images/w4.jpg" alt="watch4">
+              </div>
+            </div>
+
+            <div class="main-image-box" id="mainImgBox" onmousemove="zoomMove(event)" onmouseleave="zoomLeave()">
+              <span class="discount-badge">-6%</span>
+              <button class="expand-btn" onclick="openModal()"><i class="fa-solid fa-expand"></i></button>
+              <img id="mainImg" src="./assets/images/w4.jpg" alt="Main Watch">
+              <div class="zoom-lens" id="zoomLens"></div>
+              <div class="zoom-result" id="zoomResult"></div>
+            </div>
+          </div>
+
+          <div class="product-info">
+            <div class="brand-name">Apple</div>
+            <h1 class="product-title">Apple Watch Series 9 GPS 45mm,<br>Aluminum Case with Sport Band</h1>
+
+            <div class="rating-row">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-number">4.50</span>
+              <span class="rating-count">(2 Reviews)</span>
+              <span class="write-review">Write a review</span>
+            </div>
+
+            <ul class="features-list">
+              <li><i class="fa-solid fa-check"></i> WatchOS</li>
+              <li><i class="fa-solid fa-check"></i> Memory 32 GB</li>
+              <li><i class="fa-solid fa-check"></i> Battery Lithium</li>
+            </ul>
+
+            <div class="price-row">
+              <div class="price-group">
+                <span class="price-now">$890</span>
+                <span class="price-old">$950</span>
+              </div>
+              <div class="countdown">
+                <div class="countdown-box" id="cdH">656</div>
+                <span class="countdown-sep">:</span>
+                <div class="countdown-box" id="cdM">09</div>
+                <span class="countdown-sep">:</span>
+                <div class="countdown-box" id="cdS">22</div>
+                <span class="countdown-sep">:</span>
+                <div class="countdown-box" id="cdF">15</div>
+              </div>
+            </div>
+
+            <div class="stock-badge">In stock</div>
+
+            <div class="color-label">Color:</div>
+            <div class="color-swatches">
+              <div class="swatch active" onclick="sc(0,this)">
+                <img src="./assets/images/w1.jpg" alt="watch 1">
+              </div>
+              <div class="swatch" onclick="sc(1,this)">
+                <img src="./assets/images/w2.jpg" alt="watch 2">
+              </div>
+              <div class="swatch" onclick="sc(2,this)">
+                <img src="./assets/images/w3.jpg" alt="watch 3">
+              </div>
+              <div class="swatch" onclick="sc(3,this)">
+                <img src="./assets/images/w4.jpg" alt="watch 4">
+              </div>
+            </div>
+
+            <div class="cart-row">
+              <div class="quantity-control">
+                <button onclick="cq(-1)">−</button>
+                <input type="number" id="qv" value="1" min="1" max="99" readonly>
+                <button onclick="cq(1)">+</button>
+              </div>
+              <button class="btn-add-cart" onclick="addCart()">
+                <i class="fa-solid fa-plus"></i> ADD TO CART
+              </button>
+              <button class="btn-buy-now">BUY NOW</button>
+            </div>
+
+            <div class="wishlist-row">
+              <button class="wishlist-btn" onclick="tw(this)">
+                <i class="fa-regular fa-heart" id="wi"></i> Add to wishlist
+              </button>
+              <button class="wishlist-btn">
+                <i class="fa-solid fa-right-left"></i> Add to compare
+              </button>
+            </div>
+
+            <div class="offers-section">
+              <div class="offers-title">Special offer</div>
+              <div class="offers-box">
+                <div class="offer-item">
+                  <i class="fa-regular fa-credit-card"></i>
+                  <span>10% off, maximum $20 when paying with PAYPAL</span>
+                </div>
+                <div class="offer-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span>50% off or More iPad Cases, Covers &amp; Keyboard Folios</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-meta"><strong>SKU:</strong> WHY9IOSQCW</div>
+            <div class="product-meta">
+              <strong>Categories:</strong>
+              <a>Apple</a>,
+              <a>Smartwatch</a>
+            </div>
+
+            <div class="share-row">
+              <a class="share-icon"><i class="fa-brands fa-facebook-f"></i></a>
+              <a class="share-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a class="share-icon"><i class="fa-brands fa-x-twitter"></i></a>
+              <a class="share-icon"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="related-section">
+      <div class="wrapper">
+        <h2 class="related-title">Related products</h2>
+        <div class="slider-wrapper">
+          <button class="slider-arrow arrow-prev" onclick="relSlide(-1)"><i
+              class="fa-solid fa-chevron-left"></i></button>
+          <div class="slider-track-outer">
+            <div class="slider-track" id="relTrack">
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=300&q=80"
+                    alt="iPhone">
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">Apple iPhone 11 Pro, 256GB, Black – Fully Unlocked</div>
+                  <div class="card-price"><span class="price-current">$352</span></div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img src="https://dwecxxryy5p59.cloudfront.net/categories/f13160ff-6636-4ca0-821a-2316286c8dc1"
+                    alt="Projector">
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">Laser Projector with 5500 Lumens &amp; Short Throw Lens</div>
+                  <div class="card-price"><span class="price-current">$129</span></div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSRTBdLMMo2PpeRGU97EpYf_YQSfM3rzFahQ&s"
+                    alt="Apple Watch">
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">Apple Watch Series 7, Red Aluminum Case with Red Spo...</div>
+                  <div class="card-price"><span class="price-current">$990</span></div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300&q=80">
+                  <div class="card-discount-tag">-17%</div>
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">High-Performance Carbon Fiber Wheels</div>
+                  <div class="card-price">
+                    <span class="price-current">$499</span>
+                    <span class="price-crossed">$599</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=300&q=80" alt="Laptop">
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">Gaming Laptop 16" FHD 165Hz, GeForce RTX 4070</div>
+                  <div class="card-price"><span class="price-current">$1,922</span></div>
+                </div>
+              </div>
+
+              <div class="product-card">
+                <div class="card-image">
+                  <img
+                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MY7N3ref_VW_34FR+watch-case-42-aluminum-silver-nc-s11_VW_34FR+watch-face-42-aluminum-silver-s11_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=K2t1bnExRnFNdEtwODg0U2VzTVNiWjNqbENGcEFFTlJVaXJwL2VzdGxEMUljRjVjb3RBRUI2RzdxR2VyMW04MlpOQlF5cUI1QmhVOE1RQTRPaEx3UDdTdjdWZDZNTDA2YVdIMWltQk5rSVNHTzEzTHFqV29Xa3ArOGNPNUlRU1QxRWcxcFNUbllKRGY4Szh6MTVJZ1N3RURuRVoxZjBkWlAvNkMrbU5jNUFLT0lodkdNeWd3SHAzZlUzNms5S2kxYTV3ZHB6VUg0cXhiSFFkSkkrM2ZpN2hWNU1ldThYVFA0Q2wrelQ0ZElrWQ"
+                    alt="Watch">
+                  <div class="card-actions">
+                    <button title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                    <button title="Compare"><i class="fa-solid fa-right-left"></i></button>
+                    <button title="Quick view"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button title="Add to cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                  </div>
+                </div>
+                <div class="card-info">
+                  <div class="card-name">Apple Watch Series 9, Silver Storm Blue Sport Band</div>
+                  <div class="card-price"><span class="price-current">$850</span></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <button class="slider-arrow arrow-next" onclick="relSlide(1)"><i
+              class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="./assets/images/footer-logo.png" alt="footer logo" class="footer-logo">
+          <div class="footer-address">
+            <i class="fa-regular fa-location-dot"></i>
+            <span>29 SE 2nd Ave, Miami<br>Florida 33131, United States</span>
+          </div>
+          <div class="footer-address">
+            <i class="fa-regular fa-envelope"></i>
+            <span>support@merto.com</span>
+          </div>
+          <div class="footer-phone">(+92) 3942 7879</div>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">SHOPPING</div>
+          <a>Wishlist</a>
+          <a>Shop by Brand</a>
+          <a>Offers</a>
+          <a>Track order</a>
+          <a>Size Guide</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">INFORMATION</div>
+          <a>Track Order</a>
+          <a>Shipping &amp; Returns</a>
+          <a>About us</a>
+          <a>Help</a>
+          <a>Gift Cards</a>
+        </div>
+
+        <div class="footer-col">
+          <div class="footer-col-title">ACCOUNT</div>
+          <a>Cart</a>
+          <a>My account</a>
+          <a>My orders</a>
+          <a>Wishlist</a>
+          <a>Affiliate Program</a>
+        </div>
+
+        <div class="footer-newsletter">
+          <div class="newsletter-title">Let's keep in touch</div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="enter your email address">
+            <button><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+          <div class="social-icons">
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+            <a><i class="fa-brands fa-tiktok"></i></a>
+            <a><i class="fa-brands fa-x-twitter"></i></a>
+            <a><i class="fa-brands fa-youtube"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          <span>Copyright &copy; Merto. All Rights Reserved</span>
+        </div>
+        <div>
+          <img src="./assets/images/payment-logo.png" alt="Payment">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="imgModal" onclick="cm(event)">
+    <div class="modal-box">
+      <button class="modal-close" onclick="cm()"><i class="fa-solid fa-xmark"></i></button>
+      <img id="mImg" src="./assets/images/w4.jpg" alt="Zoomed View">
+    </div>
+  </div>
+
+  <div class="toast" id="toast"><i class="fa-solid fa-check"></i> Added to cart!</div>
+
+
+  <button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
