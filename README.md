@@ -7,6 +7,13 @@ A front-end task built as part of the **Digilians – AI-Based Software Developm
 
 ---
 
+## 🖼️ Preview
+
+![Screenshot 1](assets/Screenshot%202026-06-14%20154209.png)
+![Screenshot 2](assets/Screenshot%202026-06-14%20154222.png)
+
+---
+
 ## 📌 About the Project
 
 A fully responsive **e-commerce single product page** for an Apple Watch, built with pure HTML, CSS, and vanilla JavaScript — no frameworks.
